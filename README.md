@@ -12,7 +12,7 @@ $ docker-compose up -d
 $ aws sqs create-queue \
     --queue-name 'TEST' \
     --region ap-northeast-1 \
-    --endpoint-url http://localhost:4579 \
+    --endpoint-url http://localhost:4576 \
     --profile localstack
 ```
 
