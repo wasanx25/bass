@@ -7,7 +7,7 @@ $ aws configure --profile localstack                                            
 AWS Access Key ID [None]: dummy
 AWS Secret Access Key [None]: dummy
 Default region name [None]: ap-northeast-1
-Default output format [None]: text
+Default output format [None]: json
 $ docker-compose up -d
 $ aws sqs create-queue \
     --queue-name 'TEST' \
