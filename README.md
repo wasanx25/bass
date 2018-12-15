@@ -15,3 +15,18 @@ $ aws sqs create-queue \
     --endpoint-url http://localhost:4579 \
     --profile localstack
 ```
+
+### sample
+
+```
+$ aws sqs send-message \
+    --queue-url http://localhost:4576/queue/TEST \
+    --message-body 'TESTtest' \
+    --endpoint-url http://localhost:4576 \
+    --profile localstack
+    
+$ aws  sqs receive-message \
+    --queue-url http://localhost:4576/queue/TEST \
+    --endpoint-url http://localhost:4576 \
+    --profile localstack
+```
