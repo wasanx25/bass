@@ -25,8 +25,14 @@ $ aws sqs send-message \
     --endpoint-url http://localhost:4576 \
     --profile localstack
     
-$ aws  sqs receive-message \
+$ aws sqs receive-message \
     --queue-url http://localhost:4576/queue/TEST \
     --endpoint-url http://localhost:4576 \
     --profile localstack
+    
+$ aws sqs delete-message \
+    --queue-url http://localhost:4576/queue/TEST \
+    --endpoint-url http://localhost:4576 \
+    --profile localstack \
+    --receipt-handle a
 ```
